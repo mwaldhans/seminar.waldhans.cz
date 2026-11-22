@@ -1,0 +1,32 @@
+name: Deploy via SSH
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to remote server over SSH
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script_stop: true
+          script: |
+            set -e
+            cd /var/www/seminar.waldhans.cz/web
+            git fetch origin main
+            git reset --hard origin/main
+            # Příklady dalších kroků podle typu aplikace:
+            # composer install --no-dev --optimize-autoloader
+            # npm ci && npm run build
+            # systemctl reload apache2

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raketa — seminář IVT, Gymnázium Židlochovice">
+  <title>Raketa — seminář IVT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#" aria-label="Raketa — úvod">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 36 36" role="img">
+          <path d="M18 3.5c-5.8 4.2-8.8 9.8-8.8 16.8v5.2l8.8 5.2 8.8-5.2v-5.2C26.8 13.3 23.8 7.7 18 3.5Z"/>
+          <circle cx="18" cy="16" r="4"/>
+          <path d="M9.2 22.5 4.8 29l8.2-2.2M26.8 22.5 31.2 29l-8.2-2.2"/>
+        </svg>
+      </span>
+      <span>RAKETA</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Hlavní navigace">
+      <a class="active" href="#uvod">Úvod</a>
+      <a href="#mise">Naše mise</a>
+      <a href="#tym">Tým</a>
+    </nav>
+
+    <a class="school-link" href="https://www.gjidlo.cz/" target="_blank" rel="noreferrer">
+      GJIDLO
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="uvod">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Seminář informatiky &amp; výpočetní techniky</p>
+        <h1>Jdeme vysoko.<br><em>Vyvíjíme dál.</em></h1>
+        <p class="intro">Jsme tým studentů Gymnázia Židlochovice, kteří se učí myslet jako inženýři. Stavíme, programujeme a testujeme projekty, které posouvají hranice možností.</p>
+
+        <div class="actions">
+          <a class="button primary" href="#mise">Prozkoumat projekt <span>↗</span></a>
+          <a class="button secondary" href="#tym"><span class="play">›</span> Poznej tým</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustrace rakety">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div>
+        <div class="star s4"></div><div class="star s5"></div><div class="star s6"></div>
+
+        <div class="rocket-wrap">
+          <div class="rocket-shadow"></div>
+          <svg class="rocket" viewBox="0 0 290 480" role="img" aria-label="Raketa">
+            <defs>
+              <linearGradient id="body" x1="0" x2="1">
+                <stop offset="0" stop-color="#eceee6"/>
+                <stop offset=".45" stop-color="#fff"/>
+                <stop offset="1" stop-color="#c8ccc2"/>
+              </linearGradient>
+              <linearGradient id="flame" x1=".5" y1="0" x2=".5" y2="1">
+                <stop offset="0" stop-color="#fff"/>
+                <stop offset=".35" stop-color="#ffc557"/>
+                <stop offset="1" stop-color="#ff4d2e" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M145 20C92 73 68 150 76 252l69 38 69-38C222 150 198 73 145 20Z" fill="url(#body)" stroke="#171b17" stroke-width="4"/>
+            <path d="M145 20c-25 25-43 58-53 96h106c-10-38-28-71-53-96Z" fill="#ef3d2f"/>
+            <path d="M145 20v96H92c10-38 28-71 53-96Z" fill="#ff5442" opacity=".9"/>
+            <circle cx="145" cy="166" r="44" fill="#171b17"/>
+            <circle cx="145" cy="166" r="33" fill="#90b4b8"/>
+            <circle cx="133" cy="153" r="9" fill="#d4e5e3" opacity=".8"/>
+            <path d="M76 220c-35 24-50 56-52 96l52 17 20-82Z" fill="#df3c30" stroke="#171b17" stroke-width="4"/>
+            <path d="M214 220c35 24 50 56 52 96l-52 17-20-82Z" fill="#df3c30" stroke="#171b17" stroke-width="4"/>
+            <path d="M77 252v34l68 24 68-24v-34l-68 38Z" fill="#cfd3ca"/>
+            <path d="M106 284h78l-8 56h-62Z" fill="#171b17"/>
+            <path d="M114 340h62l-14 38h-34Z" fill="#f0f1e9" stroke="#171b17" stroke-width="4"/>
+            <path d="M128 374c-10 25-10 49 17 88 27-39 27-63 17-88Z" fill="url(#flame)" class="flame"/>
+          </svg>
+        </div>
+
+        <div class="data-card">
+          <span class="status-dot"></span>
+          <div>
+            <small>STATUS MISÍ</small>
+            <strong id="mission-status">Příprava zahájena</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission" id="mise">
+      <p class="section-label">01 / NAŠE MISÍ</p>
+      <h2>Od nápadu k <em>výsledku.</em></h2>
+      <div class="mission-grid">
+        <article>
+          <span>01</span>
+          <h3>Experimentujeme</h3>
+          <p>Ověřujeme vlastnosti materiálů, měříme výsledky a hledáme lepší řešení.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Programujeme</h3>
+          <p>Řídíme systémy, analyzujeme data a tvoříme software s reálným využitím.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Vyrábíme</h3>
+          <p>Proměňujeme počítačové modely a teoretické nápady ve funkční projekty.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="team" id="tym">
+      <p class="section-label">02 / STŮL ÚKOLŮ</p>
+      <div class="team-heading">
+        <h2>Naše cesta <em>za raketou.</em></h2>
+        <p>Projekt není jen o technice. Je o spolupráci, zkoušení, chybách a nových objevech.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
