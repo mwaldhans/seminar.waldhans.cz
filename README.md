@@ -1,14 +1,44 @@
 # Raketa
 
+## Zadání úkolu
+
+Vaším úkolem je vytvořit vlastní webovou stránku v samostatné větvi repozitáře a odevzdat ji prostřednictvím pull requestu. Při práci si procvičíte tvorbu HTML stránky, verzování pomocí Gitu a spolupráci na GitHubu.
+
+1. Naklonujte repozitář a přejděte do jeho adresáře:
+
+   ```shell
+   git clone https://github.com/mwaldhans/seminar.waldhans.cz.git
+   cd seminar.waldhans.cz
+   ```
+
+2. Vytvořte si vlastní větev; `prijmeni` nahraďte svým příjmením, ideálně bez diakritiky:
+
+   ```shell
+   git switch -c stranka-prijmeni
+   ```
+
+3. V kořenovém adresáři projektu vytvořte soubor `Index-prijmeni.html` a navrhněte nebo vygenerujte v něm vlastní webovou stránku. Nahraďte `prijmeni` svým příjmením. Stránku otevřete v prohlížeči a zkontrolujte její obsah a vzhled. Neupravujte společný soubor `index.html`.
+4. Přidejte svůj soubor do commitu a odešlete větev na GitHub:
+
+   ```shell
+   git add Index-prijmeni.html
+   git commit -m "Přidat vlastní stránku"
+   git push -u origin stranka-prijmeni
+   ```
+
+   V příkazech použijte skutečný název svého souboru a větve.
+5. Na GitHubu vytvořte **pull request** ze své větve do větve `main`. Stručně popište svou stránku a požádejte o kontrolu a připojení změn. Pokud nemáte oprávnění zapisovat do tohoto repozitáře, vytvořte si nejprve vlastní fork, naklonujte jej a pull request odešlete ze svého forku.
+
+> **Upozornění:** Po připojení do `main` se změny automaticky nasazují na server. Neodesílejte hesla, soukromé klíče ani jiné citlivé údaje.
+
+## O projektu
+
 Web projektu Raketa semináře IVT Gymnázia Židlochovice. Stránka je statická a ke svému provozu nepotřebuje instalovat závislosti ani sestavovat aplikaci.
 
 ## Spuštění na vlastním počítači
 
 Otevřete `index.html` v prohlížeči. Pro lokální HTTP server můžete v kořeni projektu použít také Python:
 
-```shell
-python -m http.server 8000 
-```
 
 Poté otevřete <http://localhost:8000>. Server ukončíte pomocí `Ctrl+C`.
 
