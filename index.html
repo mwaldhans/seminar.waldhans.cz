@@ -10,18 +10,41 @@
       margin: 0;
       display: grid;
       place-items: center;
-      background: #f1f1e8;
-      color: #171b17;
-      font-family: Georgia, "Times New Roman", serif;
+      background: #0a0d13;
+      color: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      display: grid;
+      justify-items: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    svg {
+      width: min(60vw, 260px);
+      height: auto;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(3rem, 10vw, 7rem);
+      font-size: clamp(2.5rem, 10vw, 6rem);
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-indent: .18em;
+      text-transform: uppercase;
     }
   </style>
 </head>
 <body>
-  <h1>Raketa</h1>
+  <main>
+    <svg viewBox="0 0 280 180" aria-hidden="true">
+      <path d="M56 133c38-16 71-32 99-53 21-16 40-35 66-59-11 30-28 55-50 74-31 27-69 39-115 38Z" fill="#f5f7fa"/>
+      <path d="M104 120c35-4 65-15 93-34l-19 31-37 5-18 25-5-26Z" fill="#aab8ca"/>
+      <path d="M33 153c50-7 93-16 129-35" fill="none" stroke="#719ac4" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <h1>Raketa</h1>
+  </main>
 </body>
 </html>
