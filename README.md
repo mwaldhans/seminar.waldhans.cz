@@ -7,7 +7,7 @@ Web projektu Raketa semináře IVT Gymnázia Židlochovice. Stránka je statick�
 Otevřete `index.html` v prohlížeči. Pro lokální HTTP server můžete v kořeni projektu použít také Python:
 
 ```shell
-python -m http.server 8000
+python -m http.server 8000 
 ```
 
 Poté otevřete <http://localhost:8000>. Server ukončíte pomocí `Ctrl+C`.
