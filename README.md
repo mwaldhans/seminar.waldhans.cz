@@ -12,9 +12,7 @@ python -m http.server 8000
 
 Poté otevřete <http://localhost:8000>. Server ukončíte pomocí `Ctrl+C`.
 
-- `index.html` obsahuje strukturu a texty stránky.
-- `styles.css` obsahuje vzhled stránky.
-- `script.js` zajišťuje interakci navigace.
+- `index.html` obsahuje stránku i její vzhled.
 
 ## Automatické nasazení
 
